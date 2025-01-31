@@ -15,11 +15,11 @@ Welcome to the **Ultimate To-Do List App**! The app that helps you stay on top o
 
 We’re working on some exciting features that will take your productivity to the next level:
 
-📈 **App Widgets** - cotrol your app with faster with customizable widgets on the home screen
-📁 **Categorize Your Tasks** - sort your tasks as you like with more categories that you make
-💻 **Adaptive layout** - Use your app on any android device with custom layouts for tables, mobiles and foldables
-🌙 **More Themes** – Customize your experience with beautiful new themes!
-🗂 **Advanced Filtering & Sorting** – Find tasks instantly with advanced filters & smart search!
+- 📈 **App Widgets** - cotrol your app with faster with customizable widgets on the home screen
+- 📁 **Categorize Your Tasks** - sort your tasks as you like with more categories that you make
+- 💻 **Adaptive layout** - Use your app on any android device with custom layouts for tables, mobiles and foldables
+- 🌙 **More Themes** – Customize your experience with beautiful new themes!
+- 🗂 **Advanced Filtering & Sorting** – Find tasks instantly with advanced filters & smart search!
 
 And much more… **We won’t spoil all the surprises 😉**
 
