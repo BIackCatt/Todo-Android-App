@@ -1,4 +1,4 @@
-# ✨ **Advanced To-Do List App** – Stay Organized, Anytime, Anywhere!
+# ✨ **Advanced To-Do List App** – Stay Organized, Anytime, Anywhere **with your friends 😉**!
 
 Welcome to the **Advanced To-Do List App**! The app that helps you stay on top of your tasks with **seamless online & offline** functionality and a **beautiful, smooth UI** that you'll love. Whether you're at home, work, or on the go, our app keeps your tasks organized and easily accessible!
 
