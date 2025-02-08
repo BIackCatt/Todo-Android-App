@@ -13,7 +13,7 @@ Welcome to the **Advanced To-Do List App**! The app that helps you stay on top o
 - 🔒 **Secure Cloud Sync with Google Sign-In** 
 – Sync your tasks to the cloud, and never worry about losing them again.
 
-- 👥 **Optimize your tasks with collabs** - create and join collabs with your friends like a group **Don't forget to tell your friends***😉 
+- 👥 **Optimize your tasks with collabs** - create and join collabs with your friends like a group with real-time updates **Don't forget to tell your friends**😉 
 
 - 🎯 **Minimal & Fast** – A lightweight app with everything you need and nothing you don’t.
 
