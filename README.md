@@ -35,7 +35,7 @@ And much more… **We won’t spoil all the surprises 😉**
 
 ## Download Link
 
-- download from [Here](https://objects.githubusercontent.com/github-production-release-asset-2e65be/925107360/24df60d7-c5d3-48bb-a4b8-937a25033490?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250208%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250208T192317Z&X-Amz-Expires=300&X-Amz-Signature=f8a3f9eb1ac0d2fbfd658f250114ea0491781cda33a232842d618d1754abf264&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3Dapp-release.apk&response-content-type=application%2Fvnd.android.package-archive) 
+- download from [Here](https://github.com/Hemako1320/Todo-Android-App/releases/download/v2.0/app-release.apk) 
 ---
 
 ## 📱 **Follow the Creator**
