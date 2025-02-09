@@ -66,7 +66,6 @@ class MainActivity : ComponentActivity() {
                 }
                 Surface {
                     TodoAppEntry(
-                        lifecycleScope = lifecycleScope,
                         notificationsManager = tasksNotificationsManager,
                     )
                 }

@@ -15,6 +15,8 @@ playServicesAuth = "21.3.0"
 securityCryptoKtx = "1.0.0"
 appcompat = "1.7.0"
 workRuntimeKtx = "2.10.0"
+junitJunit = "4.12"
+monitor = "1.7.2"
 
 [libraries]
 accompanist-permissions = { module = "com.google.accompanist:accompanist-permissions", version.ref = "accompanistPermissions" }
@@ -40,6 +42,8 @@ play-services-auth = { module = "com.google.android.gms:play-services-auth", ver
 x-x-x-rc01 = { module = "com.google.android.libraries.identity.googleid:1.5.0-rc01" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 androidx-work-runtime-ktx = { group = "androidx.work", name = "work-runtime-ktx", version.ref = "workRuntimeKtx" }
+junit-junit = { group = "junit", name = "junit", version.ref = "junitJunit" }
+androidx-monitor = { group = "androidx.test", name = "monitor", version.ref = "monitor" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

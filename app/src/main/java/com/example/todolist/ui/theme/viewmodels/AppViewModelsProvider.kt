@@ -23,8 +23,7 @@ object AppViewModelsProvider {
             HomeScreenViewModel(
                 offlineTasksRepo = todoApplication().container.offlineTasksRepo,
                 onlineTasksRepo = todoApplication().container.tasksRepo,
-                context = this.todoApplication().applicationContext,
-
+                firebaseFirestore = todoApplication().container.firestore
             )
         }
 
@@ -37,9 +36,17 @@ object AppViewModelsProvider {
 
         initializer {
             UserAccountViewModel(
-                this.todoApplication().container.googleAuthUiClient,
-                networkConnectivityObserver = this.todoApplication().container.networkConnectivityObserver
+                googleAuthUiClient = this.todoApplication().container.googleAuthUiClient,
+                networkConnectivityObserver = this.todoApplication().container.networkConnectivityObserver,
+                collaborationsRepo = this.todoApplication().container.collaborationsRepo,
+                firestore = todoApplication().container.firestore
+            )
+        }
 
+        initializer {
+            CollaborationViewModel(
+                collaborationsRepo = this.todoApplication().container.collaborationsRepo,
+                fireStore = todoApplication().container.firestore
             )
         }
     }

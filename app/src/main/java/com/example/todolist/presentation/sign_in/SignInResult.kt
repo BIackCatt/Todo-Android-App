@@ -1,5 +1,7 @@
 package com.example.todolist.presentation.sign_in
 
+import com.google.gson.annotations.SerializedName
+
 
 data class SignInResult (
     val data: AuthenticatedUserData?,
@@ -7,10 +9,10 @@ data class SignInResult (
 )
 
 data class AuthenticatedUserData (
-    val userId: String,
+    val userId: String? = null,
     val username: String? = null,
     val profilePictureUrl: String? = null,
     val email: String? = null,
-    val phoneNumber: String? = null
-
+    val phoneNumber: String? = null,
+    val collaborations: MutableList<String?> = mutableListOf()
 )

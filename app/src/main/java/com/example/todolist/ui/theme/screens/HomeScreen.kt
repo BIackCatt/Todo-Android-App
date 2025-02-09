@@ -220,7 +220,6 @@ fun SuccessHomeScreen(
                 pageCountIndex = page
             }
         }
-        val scope = rememberCoroutineScope()
         HorizontalPager(
             count = 2,
             state = pagerState,
@@ -240,7 +239,6 @@ fun SuccessHomeScreen(
             }
 
             Box {
-
                 Column(
                     horizontalAlignment = Alignment.CenterHorizontally,
                     verticalArrangement = Arrangement.Top

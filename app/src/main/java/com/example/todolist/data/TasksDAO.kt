@@ -1,6 +1,5 @@
 package com.example.todolist.data
 
-import android.util.Log
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
@@ -55,5 +54,26 @@ interface OfflineTasksDao {
     suspend fun update(task: OfflineTask)
 
     @Query("DELETE FROM Offline_Tasks")
+    suspend fun deleteAll()
+}
+
+@Dao
+interface CollaborationDao {
+    @Query("SELECT * FROM Collaboration_table")
+    fun getAllCollaborations(): Flow<List<CollaborationDb?>>
+
+    @Query("SELECT * FROM Collaboration_table WHERE id = :id")
+    fun getCollaboration(id: String): Flow<CollaborationDb?>
+
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
+    suspend fun insert(collaboration: CollaborationDb)
+
+    @Delete
+    suspend fun delete(collaboration: CollaborationDb)
+
+    @Update
+    suspend fun update(collaboration: CollaborationDb)
+
+    @Query("DELETE FROM Collaboration_table")
     suspend fun deleteAll()
 }

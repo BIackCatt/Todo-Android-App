@@ -4,14 +4,15 @@ import android.util.Log
 import com.example.todolist.data.Task
 import com.example.todolist.ui.theme.viewmodels.TaskUiState
 import com.google.firebase.Firebase
+import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.SetOptions
 import com.google.firebase.firestore.firestore
 import kotlinx.coroutines.tasks.await
 import java.util.UUID
 
-class FirebaseDatabase {
-    private val database = Firebase.firestore
-
+class FirebaseDatabase(
+    private val database: FirebaseFirestore,
+) {
     suspend fun deleteTask(userId: String, task: Map<String, Any?>, onError: (String) -> Unit): Boolean {
         return try {
             val userRef = database.collection("users").document(userId)

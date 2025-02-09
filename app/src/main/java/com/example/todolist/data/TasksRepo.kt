@@ -23,3 +23,12 @@ interface OfflineTasksRepoInterface {
 
 }
 
+interface CollaborationsRepo {
+    fun getAllCollaborations(): Flow<List<CollaborationDb?>>
+    fun getCollaboration(id: String): Flow<CollaborationDb?>
+    suspend fun insert(collaboration: CollaborationDb)
+    suspend fun delete(collaboration: CollaborationDb)
+    suspend fun update(collaboration: CollaborationDb)
+    suspend fun deleteAll()
+}
+

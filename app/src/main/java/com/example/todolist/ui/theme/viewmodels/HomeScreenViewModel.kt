@@ -12,6 +12,7 @@ import com.example.todolist.data.TasksRepo
 import com.example.todolist.data.convertTaskItemToMap
 import com.example.todolist.data.network.FirebaseDatabase
 import com.example.todolist.utils.getFormattedDate
+import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
@@ -20,6 +21,7 @@ import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
+import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import java.util.UUID
 
@@ -37,18 +39,27 @@ data class SyncState(
 class HomeScreenViewModel(
     private val onlineTasksRepo: TasksRepo,
     private val offlineTasksRepo: OfflineTasksRepoInterface,
-    private val context: Context,
-) : ViewModel() {
+    private val firebaseFirestore: FirebaseFirestore,
+    ) : ViewModel() {
 
     var isSignedIn: Boolean = false
-    private val firebaseDatabase = FirebaseDatabase()
+    private val firebaseDatabase = FirebaseDatabase(firebaseFirestore)
     private var loading: MutableStateFlow<LoadingControl> = MutableStateFlow(LoadingControl.Success)
     val isLoading = loading.asStateFlow()
     private val _homeUiState = MutableStateFlow(HomeUiState())
     val homeUiState = _homeUiState.asStateFlow()
+    private val _dataImported = MutableStateFlow(false)
+    val dataImported = _dataImported.asStateFlow()
 
     init {
         updateDataSource(isSignedIn)
+    }
+
+
+    fun updateDataImported(boolean: Boolean) {
+        _dataImported.update {
+            boolean
+        }
     }
 
     fun updateDataSource(isSignedIn: Boolean) {
@@ -95,7 +106,7 @@ class HomeScreenViewModel(
     val appSyncState = _appSyncState.asStateFlow()
 
 
-    private suspend fun clearTasksList() {
+    suspend fun clearTasksList() {
         onlineTasksRepo.deleteAll()
     }
 

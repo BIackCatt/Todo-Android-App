@@ -15,8 +15,8 @@ android {
         applicationId = "com.example.todolist"
         minSdk = 26
         targetSdk = 35
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 3
+        versionName = "2.0.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -91,6 +91,8 @@ dependencies {
     implementation("androidx.room:room-ktx:2.6.1")
     implementation("androidx.room:room-runtime:2.6.1")
     implementation(libs.androidx.work.runtime.ktx)
+    implementation(libs.androidx.monitor)
+    testImplementation(libs.junit.junit)
     ksp("androidx.room:room-compiler:2.6.1")
 
     // Lottie

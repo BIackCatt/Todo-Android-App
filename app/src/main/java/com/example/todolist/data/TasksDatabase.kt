@@ -6,19 +6,18 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 
-@Database(entities = [Task::class, OfflineTask::class], version = 1, exportSchema = false)
+@Database(entities = [Task::class, OfflineTask::class, CollaborationDb::class], version = 2, exportSchema = false)
 abstract class TasksDatabase : RoomDatabase() {
     abstract fun taskDAO(): TaskDao
     abstract fun offlineTasksDao(): OfflineTasksDao
+    abstract fun collaborationDao(): CollaborationDao
 
     companion object {
         @Volatile
         var Instance: TasksDatabase? = null
 
         fun getDatabase(context: Context): TasksDatabase {
-            Log.d("Database creation", "Database creation started")
             return Instance ?: synchronized(this) {
-                Log.d("Database creation", "Database created $Instance")
                 Room.databaseBuilder(
                     context.applicationContext,
                     TasksDatabase::class.java,
