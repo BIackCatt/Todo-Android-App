@@ -35,7 +35,7 @@ And much more… **We won’t spoil all the surprises 😉**
 
 ## Download Link
 
-- download from [Here](https://github.com/Hemako1320/Todo-Android-App/releases/download/v2.0/app-release.apk) 
+- download from [Here](https://github.com/Hemako1320/Todo-Android-App/releases/download/v2.0/Taskly.apk) 
 ---
 
 ## 📱 **Follow the Creator**
