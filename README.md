@@ -42,7 +42,7 @@ And much more… **We won’t spoil all the surprises 😉**
 
 Stay connected and follow the creator for updates and behind-the-scenes content!
 
-- **Instagram**: [@Hemako](https://www.instagram.com/hemako_m?igsh=dXB5dXBnYmgyaTFh)
+- **[![Instagram](https://www.instagram.com/hemako_m?igsh=dXB5dXBnYmgyaTFh)**
 - **LinkedIn**: [@LinkedIn](https://eg.linkedin.com/in/ibrahim-mahmoud-1930b3329)
 
 Feel free to DM me for any suggestions, ideas, or just to say hi! 😄
