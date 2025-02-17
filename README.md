@@ -43,6 +43,6 @@ And much more… **We won’t spoil all the surprises 😉**
 Stay connected and follow the creator for updates and behind-the-scenes content!
 
  - [![Instagram](https://img.shields.io/badge/Instagram-@hemako_m-833AB4?style=for-the-badge&logo=instagram&logoColor=blue)](https://www.instagram.com/hemako_m?igsh=dXB5dXBnYmgyaTFh)
- - [![Linkedin](https://i.sstatic.net/gVE0j.png) LinkedIn](https://eg.linkedin.com/in/ibrahim-mahmoud-1930b3329)
+ - [![Linkedin](https://i.sstatic.net/gVE0j.png)](https://eg.linkedin.com/in/ibrahim-mahmoud-1930b3329)
 
 Feel free to DM me for any suggestions, ideas, or just to say hi! 😄
